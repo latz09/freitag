@@ -6,13 +6,16 @@ import {
 	FaHammer,
 } from 'react-icons/fa';
 import { MdPlumbing } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const Services = () => {
 	return (
 		<div className='grid place-items-center gap-8'>
-			<span className='text-2xl lg:text-4xl tracking-wider scale-y-150 text-center text-primary mb-8 font-oswald'>Some Services I Offer</span>{' '}
+			<span className='text-2xl lg:text-4xl tracking-wider scale-y-150 text-center text-primary mb-8 font-oswald'>
+				Some Services I Offer
+			</span>{' '}
 			{/* <Icons /> */}
-            <ServicesList />
+			<ServicesList />
 		</div>
 	);
 };
@@ -48,20 +51,27 @@ const services = [
 	'Replace Faucets',
 	'Replace Light Fixtures',
 	'Demo and Removal',
-    
 ];
 
-
 const ServicesList = () => {
-    return (
-        <>
-            <div className="grid md:grid-cols-2  lg:grid-cols-3 place-items-cente gap-5 lg:gap-12 text-center tracking-widest text-light lg:text-xl ">
-                {services.map((service, index) => <span key={index} className="scale-y-125 font-oswald">{service}</span>) }
-                
-
-            </div>
-            <span className=" mt-8 text-light tracking-widest text-lg lg:text-3xl ">And I am open to inquiries!</span>
-            
-        </>
-    )
-}
+	return (
+		<>
+			<div className='grid md:grid-cols-2  lg:grid-cols-3 place-items-cente gap-5 lg:gap-12 text-center tracking-widest text-light lg:text-xl '>
+				{services.map((service, index) => (
+					<motion.div
+						key={index}
+						initial={{ opacity: 0, scale:.97 }}
+						whileInView={{ opacity: 1, scale: 1 }}
+						transition={{ duration: 1.5 }}
+						className='scale-y-125 font-oswald'
+					>
+						{service}
+					</motion.div>
+				))}
+			</div>
+			<span className=' mt-8 text-light tracking-widest text-lg lg:text-3xl '>
+				And I am open to inquiries!
+			</span>
+		</>
+	);
+};

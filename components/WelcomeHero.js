@@ -13,19 +13,19 @@ const WelcomeHero = () => {
 			></div>
 
 			<div className='absolute inset-0 flex flex-col justify-center bg-dark/60   font-questrial'>
-				<div className='absolute top-0 left-0 right-0'>
+				<div className=''>
 					<Navbar />
 				</div>
 				<div className=' h-full  grid place-items-center'>
-					<div className='grid place-items-center gap-4 lg:gap-8 mx-4  tracking-widest '>
+					<div className='grid place-items-center gap-6 lg:gap-10 mx-4  tracking-widest '>
 						<span className='uppercase text-4xl lg:text-6xl scale-y-125 lg:scale-y-150 font-oswald font-bold text-light'>
 							Jay Freitag LLC
 						</span>
 
-						<span className='text-light text-xl lg:text-3xl '>
-							Your Local Handyman, working directly for you.
+						<span className='text-light text-xl lg:text-3xl scale-y-150  '>
+							Your Local Handyman - working directly for you.
 						</span>
-						<button className='border bg-primary border-primary hover:bg-primary/70 text-light px-4 py-3 shadow-lg rounded-sm text-xl font-bold transition duration-700 hover:scale-90 mt-6 lg:mt-0'>
+						<button className='border bg-primary border-primary hover:bg-primary/70 text-light px-4 py-3 shadow-lg rounded-sm text-xl font-bold transition duration-700 hover:scale-90 mt-12 lg:mt-0'>
 							Contact Us
 						</button>
 					</div>
