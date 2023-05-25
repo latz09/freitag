@@ -1,4 +1,4 @@
-import img1 from '../public/images/main.jpg';
+
 import img2 from '../public/images/2.jpg';
 import img3 from '../public/images/3.jpg';
 import img4 from '../public/images/4.jpg';
@@ -18,6 +18,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
+
 const Images = () => {
 	const images = [img3, shelf, kitchen,  framing, img4, wetbar,  bathroom2, desk, door, img2, framing2, bathroom3,   bathroom1, stairs, framing3 ];
 
@@ -27,12 +29,19 @@ const Images = () => {
 		setNumImagesToShow((prevNum) => prevNum + 3);
 	};
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
 	return (
 		<>
 			<h1 className='text-3xl font-bold text-center scale-y-150 text-dark/70'>
 				Recent Work
 			</h1>
-			<div className='grid md:grid-cols-2 xl:grid-cols-3 place-items-center max-w-7xl mx-auto gap-y-6 lg:gap-y-12 gap-x-4'>
+			<div className='grid md:grid-cols-2 xl:grid-cols-3 place-items-center max-w-7xl mx-auto gap-y-12 gap-x-4'>
 				{images.slice(0, numImagesToShow).map((image, index) => (
 					<motion.div
 						key={index}
@@ -47,15 +56,24 @@ const Images = () => {
 			</div>
 
 			{numImagesToShow < images.length && (
-				<div className='text-center mt-4'>
+				<div className='text-center'>
 					<button
 						className=' '
 						onClick={handleLoadMore}
 					>
-						<div className='scale-y-150 text-primary font-bold text-lg lg:text-2xl'> View More Of Our Gallery!</div>
+						<div className='scale-y-150 text-primary font-questrial border p-2 rounded-sm text-lg lg:text-2xl'> Load More Of Our Gallery!</div>
 					</button>
 				</div>
 			)}
+
+            <div className='text-center mt-4'>
+				<button
+					className=' '
+					onClick={scrollToTop}
+				>
+					<div className='text-primary text-5xl shadow-xl bg-light rounded-full'>< BsFillArrowUpCircleFill /> </div>
+				</button>
+			</div>
 		</>
 	);
 };

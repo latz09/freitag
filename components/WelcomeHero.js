@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 const WelcomeHero = () => {
 	return (
-		<div className='grid gap-16 justify-items-center h-[100vh] relative text-center'>
+		<div className='grid gap-16 justify-items-center h-[95vh] relative text-center'>
 			<div
 				className='absolute inset-0 bg-cover bg-bottom'
 				style={{ backgroundImage: `url(${'images/4.jpg'})` }}
