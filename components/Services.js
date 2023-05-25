@@ -69,9 +69,10 @@ const ServicesList = () => {
 					</motion.div>
 				))}
 			</div>
-			<span className=' mt-8 text-light tracking-widest text-lg lg:text-3xl '>
-				And I am open to inquiries!
-			</span>
+			<div className=' mt-8 text-light tracking-widest text-lg lg:text-3xl grid gap-2 place-items-center '>
+				<span>And I am open to inquiries!</span> 
+				<span className="text-base lg:text-xl text-primary font-black">651-230-3876</span>
+			</div>
 		</>
 	);
 };
