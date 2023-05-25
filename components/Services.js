@@ -62,7 +62,7 @@ const ServicesList = () => {
 						key={index}
 						initial={{ opacity: 0, scale:.97 }}
 						whileInView={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 1.5 }}
+						transition={{ duration: 1.1, delay: .4 }}
 						className='scale-y-125 font-oswald'
 					>
 						{service}

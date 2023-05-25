@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 const WelcomeHero = () => {
 	return (
-		<div className='grid gap-16 justify-items-center h-[95vh] relative text-center'>
+		<div className='grid gap-16 justify-items-center h-[90vh] relative text-center'>
 			<div
 				className='absolute inset-0 bg-cover bg-bottom'
 				style={{ backgroundImage: `url(${'images/4.jpg'})` }}
@@ -25,9 +25,9 @@ const WelcomeHero = () => {
 						<span className='text-light text-xl lg:text-3xl scale-y-150  '>
 							Your Local Handyman - working directly for you.
 						</span>
-						<button className='border bg-primary border-primary hover:bg-primary/70 text-light px-4 py-3 shadow-lg rounded-sm text-xl font-bold transition duration-700 hover:scale-90 mt-12 lg:mt-0'>
+						{/* <button className='border bg-primary border-primary hover:bg-primary/70 text-light px-4 py-3 shadow-lg rounded-sm text-xl font-bold transition duration-700 hover:scale-90 mt-12 lg:mt-0'>
 							Contact Us
-						</button>
+						</button> */}
 					</div>
 				</div>
 				<div className='grid place-items-center gap-2 mb-8 text-2xl font-bold animate-pulse text-primary'>
