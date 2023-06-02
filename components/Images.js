@@ -38,8 +38,8 @@ const Images = () => {
 
 	return (
 		<>
-			<h1 className='text-3xl font-bold text-center scale-y-150 text-dark/70'>
-				Recent Work
+			<h1 className='font-questrial text-2xl scale-y-150 mb-16 uppercase italic text-center font-bold'>
+				My Work
 			</h1>
 			<div className='grid md:grid-cols-2 xl:grid-cols-3 place-items-center max-w-7xl mx-auto gap-y-12 gap-x-4'>
 				{images.slice(0, numImagesToShow).map((image, index) => (
@@ -61,7 +61,7 @@ const Images = () => {
 						className=' '
 						onClick={handleLoadMore}
 					>
-						<div className='scale-y-150 text-primary font-questrial border p-2 rounded-sm text-lg lg:text-2xl'> Load More Of Our Gallery!</div>
+						<div className='scale-y-150 text-light bg-secondary font px-3 py-1 rounded text-lg lg:text-2xl'> View More </div>
 					</button>
 				</div>
 			)}
