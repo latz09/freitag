@@ -43,9 +43,9 @@ const Reviews = () => {
 	};
 
 	return (
-		<div className='   grid place-items-cente'>f
+		<div className='   grid place-items-cente'>
 			<div className='px-2 sm:w-3/4 xl:w-1/3 mx-auto grid gap-4 place-items-center   '>
-				<span className="text-dark/80 font-bold tracking-widest font-questrial text-2xl scale-y-150 mb-16 uppercase italic">Why Jay Freitag . . .</span>
+				
 				<div className='flex justify-between w-3/4   text-4xl text-primary'>
 					<button onClick={prevReview}>
 						<BsFillArrowLeftCircleFill />

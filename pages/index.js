@@ -19,8 +19,18 @@ export default function Home() {
 			{/* <Services /> */}
 
 			<SecondHero />
-			<Reviews />
-			<Images />
+			<div className='grid place-items-center'>
+				<span className='text-primary py-2 shadow-md font-bold tracking-widest font-questrial text-2xl scale-y-150 mb-16 uppercase italic bg-secondary w-full text-center'>
+					Why Jay Freitag . . .
+				</span>
+				<Reviews />
+			</div>
+			<div className='grid place-items-center'>
+			<span className='text-secondary py-2  font-bold tracking-widest font-questrial text-2xl scale-y-150 mb-16 uppercase italic text-center'>
+					My Work . . .
+				</span>
+				<Images />
+			</div>
 			<Footer />
 		</motion.div>
 	);
