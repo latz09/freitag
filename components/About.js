@@ -1,6 +1,6 @@
 const About = () => {
 	return (
-		<div className='max-w-5xl mx-auto px-2   text-lg lg:text-2xl text-dark tracking-wide'>
+		<div className='max-w-5xl mx-auto px-4  text-lg lg:text-2xl text-dark tracking-wide'>
 			<div className='grid gap-8'>
 				<div className='text-secondary   font-bold tracking-widest font-questrial text-2xl scale-y-150  uppercase italic text-center'>
 					Your Local Handyman

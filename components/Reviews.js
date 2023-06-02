@@ -43,7 +43,7 @@ const Reviews = () => {
 	};
 
 	return (
-		<div className='   grid place-items-cente'>
+		<div className='    grid place-items-cente'>
 			<div className='px-2 sm:w-3/4 xl:w-1/3 mx-auto grid gap-4 place-items-center   '>
 				
 				<div className='flex justify-between w-3/4   text-4xl text-primary'>
@@ -55,7 +55,7 @@ const Reviews = () => {
 					</button>
 				</div>
 				<motion.div
-					className='flex flex-col gap-4 font-oswald lg:text-lg tracking-wider  py-8 px-4 '
+					className='flex flex-col gap-4 font-oswald lg:text-lg tracking-wider h-full  py-8 px-4 '
 					initial={{ opacity: 0, scale: 0.9, }}
 					animate={{ opacity: 1, scale: 1, }}
 					transition={{ duration: 1.1 }}

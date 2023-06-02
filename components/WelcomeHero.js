@@ -23,7 +23,7 @@ const WelcomeHero = () => {
 						</span>
 
 						<span className='text-light text-xl lg:text-3xl scale-y-150  '>
-							Your Local Handyman - working directly for you.
+							Your Local Handyman of West Saint Paul
 						</span>
 						{/* <button className='border bg-primary border-primary hover:bg-primary/70 text-light px-4 py-3 shadow-lg rounded-sm text-xl font-bold transition duration-700 hover:scale-90 mt-12 lg:mt-0'>
 							Contact Us

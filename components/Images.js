@@ -70,7 +70,7 @@ const Images = () => {
 				{numImagesToShow < images.length && (
 					<div className='text-center '>
 						<button className=' ' onClick={handleLoadMore}>
-							<div className='scale-y-150 text-light bg-secondary font px-3 py-1 rounded text-lg lg:text-2xl'>
+							<div className='scale-y-150 text-secondary hover:bg-secondary hover:text-light transition  duration-700 bg-secondary/10 font px-3 py-1 rounded text-lg lg:text-2xl'>
 								{' '}
 								View More{' '}
 							</div>
